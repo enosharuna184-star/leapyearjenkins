@@ -1,9 +1,12 @@
 import sys
 
-def leapYear(year):
-    if(year%4 == 0):
-        return "Leap year"
+def leapyear(year):
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        return True
     else:
-        return "Not a Leap Year"
-year = int(sys.argv[1])
-leapYear(year)
+        return False
+
+if __name__ == "__main__":
+    year=int(sys.argv[1])
+    print(f"{year} is {leapyear(year)}")
+    print(sys.argv[0])

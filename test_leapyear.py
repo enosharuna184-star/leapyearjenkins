@@ -1,7 +1,7 @@
-from leap import leapYear
+from leapyear import leapyear
 
-def test_year1():
-    assert leapYear(2012) == "Leap year"
+def test_is():
+    assert leapyear(2016) == True
 
-def test_year2():
-    assert leapYear(2021) == "Not a leap year"
+def test_isnot():
+    assert leapyear(2017) == False
