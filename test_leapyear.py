@@ -1,10 +1,7 @@
-from leapYear import leapYear
+from leap import leapYear
 
-def test_leapYear_pos():
-    assert leapYear(2024) == True
+def test_year1():
+    assert leapYear(2012) == "Leap year"
 
-def test_leapYear_zero():
-    assert leapYear(2000) == True
-
-def test_leapYear_neg():
-    assert leapYear(2023) == False
+def test_year2():
+    assert leapYear(2021) == "Not a leap year"
